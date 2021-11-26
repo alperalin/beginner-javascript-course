@@ -1,0 +1,65 @@
+body {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background: transparent url('./bg-image.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.sketch__canvas {
+	background-color: white;
+	width: 800px;
+	height: 500px;
+	border: 30px solid saddlebrown;
+	border-radius: 10px;
+}
+
+.sketch__shake-button {
+	background-color: whitesmoke;
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+	padding: 10px 15px;
+	border: 0;
+	border-radius: 0;
+	margin: 10px 0 0 0;
+}
+
+.shake {
+	animation: shakeAnimation 0.5s 1;
+}
+
+@keyframes shakeAnimation {
+	0% {
+		transform: translateX(10%);
+	}
+
+	15% {
+		transform: translateX(0);
+	}
+
+	30% {
+		transform: translateX(-10%);
+	}
+
+	45% {
+		transform: translateX(0);
+	}
+
+	60% {
+		transform: translateX(10%);
+	}
+
+	75% {
+		transform: translateX(0);
+	}
+
+	90% {
+		transform: translateX(-10%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
