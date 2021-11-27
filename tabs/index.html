@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tabs</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="tabs">
+            <div role="tablist" aria-label="programming languages">
+                <button role="tab" aria-selected="true" id="js">JS</button>
+                <button role="tab" aria-selected="false" id="php">PHP</button>
+                <button role="tab" aria-selected="false" id="ruby">RUBY</button>
+            </div>
+            <div role="tabpanel" aria-labelledby="js">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos et saepe ullam, beatae enim dicta accusamus
+                dolores non quos libero, illum dignissimos sed animi id quis, fugit nam porro quam!
+            </div>
+            <div role="tabpanel" aria-labelledby="php" hidden>
+                beatae enim dicta accusamus
+                dolores non quos libero, illum dignissimos sed animi id quis, fugit nam porro quam!
+            </div>
+            <div role="tabpanel" aria-labelledby="ruby" hidden>
+                dolores non quos libero, illum dignissimos sed animi id quis, fugit nam porro quam!
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

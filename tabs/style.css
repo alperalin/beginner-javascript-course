@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: slateblue;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	background-color: white;
+	width: 100%;
+	padding: 20px;
+	margin-top: 100px;
+}
+
+.tabs {
+	width: 100%;
+}
+
+[role='tablist'] {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.tabs button {
+	background-color: gainsboro;
+	max-width: calc(33% - 10px);
+	width: 100%;
+	border: 0;
+	border-radius: 5px 5px 0 0;
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+.tabs button[aria-selected='true'] {
+	background-color: yellowgreen;
+	cursor: auto;
+}
+
+[role='tabpanel'] {
+	background-color: yellowgreen;
+	padding: 20px;
+}
