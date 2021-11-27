@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: yellowgreen;
+	padding: 100px;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 600px;
+	width: 100%;
+	background-color: wheat;
+	padding: 20px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+.text {
+	height: 400px;
+	font-size: 16px;
+	margin: 0 0 20px 0;
+	overflow: scroll;
+}
+
+.button {
+	width: 100%;
+	background-color: saddlebrown;
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	border: 1px saddlebrown;
+	border-radius: 0;
+	padding: 12px;
+	opacity: 1;
+	cursor: pointer;
+	transition: opacity 300ms ease-in-out;
+}
+
+.button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
