@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Text Generator</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="radioGroup">
+            <label for="sarcastic">
+                <input type="radio" name="textGeneratorRadio" id="sarcastic" checked>
+                Sarcastic
+            </label>
+            <label for="funky">
+                <input type="radio" name="textGeneratorRadio" id="funky">
+                Funky
+            </label>
+            <label for="unable">
+                <input type="radio" name="textGeneratorRadio" id="unable">
+                Unable to Structure a Sentence
+            </label>
+        </div>
+
+        <textarea name="textarea" id="inputTextarea" cols="10"
+            rows="10">so I was thinking about to going to the store.</textarea>
+
+        <p class="showText"></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

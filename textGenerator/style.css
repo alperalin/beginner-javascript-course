@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: blanchedalmond;
+	padding: 0;
+	margin: 0;
+}
+
+.wrap {
+	width: 500px;
+	background-color: white;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+label {
+	display: block;
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+
+.showText {
+	margin: 20px 0 0 0;
+}
