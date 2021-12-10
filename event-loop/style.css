@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gainsboro;
+	padding: 0;
+	margin: 0;
+}
+
+.go {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	background-color: #fff;
+	width: 500px;
+	height: 500px;
+	font-size: 30px;
+	color: black;
+	padding: 100px;
+	margin: 100px auto;
+	border: 0;
+	border-radius: 0;
+	opacity: 1;
+	transition: all 300ms;
+	cursor: pointer;
+}
+
+.go.circle {
+	border-radius: 50%;
+}
+
+.go.red {
+	background-color: red;
+	color: white;
+}
+
+.go.purple {
+	background-color: purple;
+	color: white;
+}
+
+.go.fadeOut {
+	opacity: 0;
+}
